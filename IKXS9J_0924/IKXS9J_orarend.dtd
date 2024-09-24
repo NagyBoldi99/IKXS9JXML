@@ -1,0 +1,43 @@
+<!ELEMENT IKXS9J_orarend (ora+)>
+
+<!ELEMENT ora (targy, idopont, helyszin, oktato, szak)>
+<!ATTLIST ora 
+    id ID #REQUIRED
+    tipus (eloadas | gyakorlat) #REQUIRED
+>
+
+<!ELEMENT targy EMPTY>
+<!ATTLIST targy 
+    nev CDATA #REQUIRED
+>
+
+<!ELEMENT idopont (nap, tol, ig)>
+<!ELEMENT nap EMPTY>
+<!ATTLIST nap 
+    napn (Hétfő | Kedd | Szerda | Csütörtök | Péntek | Szombat | Vasárnap) #REQUIRED
+>
+
+<!ELEMENT tol EMPTY>
+<!ATTLIST tol 
+    tolt CDATA #REQUIRED
+>
+
+<!ELEMENT ig EMPTY>
+<!ATTLIST ig 
+    igt CDATA #REQUIRED
+>
+
+<!ELEMENT helyszin EMPTY>
+<!ATTLIST helyszin 
+    hol CDATA #REQUIRED
+>
+
+<!ELEMENT oktato EMPTY>
+<!ATTLIST oktato 
+    neve CDATA #REQUIRED
+>
+
+<!ELEMENT szak EMPTY>
+<!ATTLIST szak 
+    sznev CDATA #REQUIRED
+>
