@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EtteremKapcsolat>
+
+    <Etterem ekod="e1">
+        <Nev>Csillag Etterem</Nev>
+        <Csillag>4</Csillag>
+        <Cim>
+            <Varos>Miskolc</Varos>
+            <Utca>Kossuth Lajos utca</Utca>
+            <Hazszam>5</Hazszam>
+        </Cim>
+    </Etterem>
+
+    <Etterem ekod="e2">
+        <Nev>Molnár Etterem</Nev>
+        <Csillag>2</Csillag>
+        <Cim>
+            <Varos>Miskolc</Varos>
+            <Utca>Damjanich utca</Utca>
+            <Hazszam>8</Hazszam>
+        </Cim>
+    </Etterem>
+
+    <Etterem ekod="e3">
+        <Nev>Szikra Etterem</Nev>
+        <Csillag>3</Csillag>
+        <Cim>
+            <Varos>Debrecen</Varos>
+            <Utca>Petofi Sandor utca</Utca>
+            <Hazszam>12</Hazszam>
+        </Cim>
+    </Etterem>
+
+    <Foszakacs fkod="1" ref="e1">
+        <Nev>Kiss Janos</Nev>
+        <Eletkor>45</Eletkor>
+        <Vegzettseg>Szakacs Diploma</Vegzettseg>
+    </Foszakacs>
+
+    <Foszakacs fkod="2" ref="e2">
+        <Nev>Gőz Béla</Nev>
+        <Eletkor>32</Eletkor>
+        <Vegzettseg>Szakacs Diploma</Vegzettseg>
+    </Foszakacs>
+
+    <Foszakacs fkod="3" ref="e3">
+        <Nev>Molnar Pál</Nev>
+        <Eletkor>40</Eletkor>
+        <Vegzettseg>Master Chef Diploma</Vegzettseg>
+    </Foszakacs>
+
+    <Szakacs szkod="1" ref="e1">
+        <Nev>Nagy Gabor</Nev>
+        <Reszleg>Hidegkonyha</Reszleg>
+        <Vegzettseg>Szakacs OKJ</Vegzettseg>
+    </Szakacs>
+
+    <Szakacs szkod="2" ref="e2">
+        <Nev>Farkas Krisztian</Nev>
+        <Reszleg>Melegkonyha</Reszleg>
+        <Vegzettseg>Szakacs OKJ</Vegzettseg>
+    </Szakacs>
+
+    <Szakacs szkod="3" ref="e3">
+        <Nev>Kerekes Ádám</Nev>
+        <Reszleg>Cukraszda</Reszleg>
+        <Vegzettseg>Cukrasz OKJ</Vegzettseg>
+    </Szakacs>
+
+    <Gyakornok gykod="1" ref="e1">
+        <Nev>Szabo Marton</Nev>
+        <Gyakorlat>
+            <Kezdete>2024-04-01</Kezdete>
+            <Idotartama>6 honap</Idotartama>
+        </Gyakorlat>
+        <Muszak>Nappalos</Muszak>
+    </Gyakornok>
+
+    <Gyakornok gykod="2" ref="e2">
+        <Nev>Kovacs Timea</Nev>
+        <Gyakorlat>
+            <Kezdete>2024-02-01</Kezdete>
+            <Idotartama>3 honap</Idotartama>
+        </Gyakorlat>
+        <Muszak>Esti</Muszak>
+    </Gyakornok>
+
+    <Gyakornok gykod="3" ref="e3">
+        <Nev>Szilagyi Peter</Nev>
+        <Gyakorlat>
+            <Kezdete>2024-05-01</Kezdete>
+            <Idotartama>4 honap</Idotartama>
+        </Gyakorlat>
+        <Muszak>Delutani</Muszak>
+    </Gyakornok>
+
+    <Vendeg vkod="1" ref="e1">
+        <Nev>Toth Maria</Nev>
+        <Eletkor>30</Eletkor>
+        <Cim>
+            <Varos>Debrecen</Varos>
+            <Utca>Arany Janos utca</Utca>
+            <Hazszam>10</Hazszam>
+        </Cim>
+    </Vendeg>
+
+    <Vendeg vkod="2" ref="e2">
+        <Nev>Horvath Andras</Nev>
+        <Eletkor>45</Eletkor>
+        <Cim>
+            <Varos>Miskolc</Varos>
+            <Utca>Erzsébet Királyné utca</Utca>
+            <Hazszam>25</Hazszam>
+        </Cim>
+    </Vendeg>
+
+    <Vendeg vkod="3" ref="e3">
+        <Nev>Szabo Istvan</Nev>
+        <Eletkor>50</Eletkor>
+        <Cim>
+            <Varos>Budapest</Varos>
+            <Utca>Bartok Bela utca</Utca>
+            <Hazszam>35</Hazszam>
+        </Cim>
+    </Vendeg>
+
+    <Rendeles>
+        <Osszeg>5000</Osszeg>
+        <Etel>Marhaporkolt</Etel>
+        <VendegRef>1</VendegRef>
+    </Rendeles>
+
+    <Rendeles>
+        <Osszeg>7500</Osszeg>
+        <Etel>Halászlé</Etel>
+        <VendegRef>2</VendegRef>
+    </Rendeles>
+
+    <Rendeles>
+        <Osszeg>6000</Osszeg>
+        <Etel>Gulyásleves</Etel>
+        <VendegRef>3</VendegRef>
+    </Rendeles>
+
+</EtteremKapcsolat>

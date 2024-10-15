@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:simpleType name="NameType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+            <xs:maxLength value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="AgeType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="16"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="AmountType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.00"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="DurationType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]+ (ora|nap|honap)"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="Foszakacs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Fkod" type="xs:integer"/>
+                <xs:element name="Nev" type="NameType"/>
+                <xs:element name="Eletkor" type="AgeType"/>
+                <xs:element name="Vegzettseg" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Etterem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Ekod" type="xs:integer"/>
+                <xs:element name="Nev" type="NameType"/>
+                <xs:element name="Csillag" type="xs:integer"/>
+                <xs:element name="Cim">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Varos" type="NameType"/>
+                            <xs:element name="Utca" type="xs:string"/>
+                            <xs:element name="Hazszam" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="FoszakacsRef" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Szakacs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Szkod" type="xs:integer"/>
+                <xs:element name="Nev" type="NameType"/>
+                <xs:element name="Reszleg" type="xs:string"/>
+                <xs:element name="Vegzettseg" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Gyakornok">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Gykod" type="xs:integer"/>
+                <xs:element name="Nev" type="NameType"/>
+                <xs:element name="Gyakorlat">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Kezdete" type="xs:date"/>
+                            <xs:element name="Idotartama" type="DurationType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Vendeg">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Vkod" type="xs:integer"/>
+                <xs:element name="Nev" type="NameType"/>
+                <xs:element name="Eletkor" type="AgeType"/>
+                <xs:element name="Cim">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Varos" type="NameType"/>
+                            <xs:element name="Utca" type="xs:string"/>
+                            <xs:element name="Hazszam" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Rendeles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Osszeg" type="AmountType"/>
+                <xs:element name="Etel" type="xs:string"/>
+                <xs:element name="VendegRef" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Muszak">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Idotartama" type="DurationType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
