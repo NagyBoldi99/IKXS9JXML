@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><IKXS9J_orarend>
+	<ora id="i1" tipus="eloadas">
+		<targy nev="Oracle Rendszergazda"/>
+		<idopont>
+			<nap napn="Hétfő"/>
+			<tol tolt="08:00"/>
+			<ig igt="10:00"/>
+		</idopont>
+		<helyszin hol="Inf épület 103"/>
+		<oktato neve="Dr.Kovács Sándor"/>
+		<szak sznev="mérnökinformatikus"/>
+	<oraado>Szűcs Miklós</oraado></ora>
+	
+	<ora id="i2" tipus="eloadas">
+		<targy nev="Webtechnológiák 1"/>
+		<idopont>
+			<nap napn="Hétfő"/>
+			<tol tolt="10:00"/>
+			<ig igt="12:00"/>
+		</idopont>
+		<helyszin hol="A1 1-es előadó"/>
+		<oktato neve="Dr.Agárdi Anita"/>
+		<szak sznev="mérnökinformatikus"/>
+	</ora>
+
+	<ora id="i3" tipus="gyakorlat">
+		<targy nev="Webtechnológiák 1"/>
+		<idopont>
+			<nap napn="Hétfő"/>
+			<tol tolt="14:00"/>
+			<ig igt="16:00"/>
+		</idopont>
+		<helyszin hol="Infó épület 101"/>
+		<oktato neve="Dr.Agárdi Anita"/>
+		<szak sznev="mérnökinformatikus"/>
+	</ora>
+	
+    <ora id="i4" tipus="eloadas">
+		<targy nev="Adatkezelés XML-ben"/>
+		<idopont>
+			<nap napn="Kedd"/>
+			<tol tolt="10:00"/>
+			<ig igt="12:00"/>
+		</idopont>
+		<helyszin hol="Infó épület 103"/>
+		<oktato neve="Dr. Bednarik László"/>
+		<szak sznev="mérnökinformatikus"/>
+	</ora>
+
+    <ora id="i5" tipus="gyakorlat">
+		<targy nev="Adatkezelés XML-ben"/>
+		<idopont>
+			<nap napn="Kedd"/>
+			<tol tolt="12:00"/>
+			<ig igt="14:00"/>
+		</idopont>
+		<helyszin hol="infó épület 103"/>
+		<oktato neve="Dr. Bednarik László"/>
+		<szak sznev="mérnökinformatikus"/>
+	</ora>
+
+    <ora id="i6" tipus="eloadas">
+		<targy nev="Web-es alkalmazások(c#)"/>
+		<idopont>
+			<nap napn="Kedd"/>
+			<tol tolt="14:00"/>
+			<ig igt="16:00"/>
+		</idopont>
+		<helyszin hol="infó épület 101"/>
+		<oktato neve="Dr.Árvai László"/>
+		<szak sznev="mérnökinformatikus"/>
+	</ora>
+
+     <ora id="i7" tipus="gyakorlat">
+		<targy nev="Web-es alkalmazások(c#)"/>
+		<idopont>
+			<nap napn="Kedd"/>
+			<tol tolt="16:00"/>
+			<ig igt="18:00"/>
+		</idopont>
+		<helyszin hol="infó épület 101"/>
+		<oktato neve="Dr.Árvai László"/>
+		<szak sznev="mérnökinformatikus"/>
+	</ora>
+
+     <ora id="i8" tipus="gyakorlat">
+		<targy nev="Oracle Rendszergazda"/>
+		<idopont>
+			<nap napn="Kedd"/>
+			<tol tolt="13:00"/>
+			<ig igt="15:00"/>
+		</idopont>
+		<helyszin hol="infó épület 203"/>
+		<oktato neve="BitMan"/>
+		<szak sznev="mérnökinformatikus"/>
+	</ora>
+
+    <ora id="i9" tipus="gyakorlat">
+		<targy nev="Mesterséges Intelligencia"/>
+		<idopont>
+			<nap napn="Szerda"/>
+			<tol tolt="10:00"/>
+			<ig igt="12:00"/>
+		</idopont>
+		<helyszin hol="A1 10-es előadó"/>
+		<oktato neve="Fazekas Levente"/>
+		<szak sznev="mérnökinformatikus"/>
+    </ora>
+
+     <ora id="i10" tipus="eloadas">
+		<targy nev="Mesterséges Intelligencia"/>
+		<idopont>
+			<nap napn="Szerda"/>
+			<tol tolt="16:00"/>
+			<ig igt="18:00"/>
+		</idopont>
+		<helyszin hol="A1 32"/>
+		<oktato neve="Dr Kunné Tamási Judit"/>
+		<szak sznev="mérnökinformatikus"/>
+    </ora>
+
+</IKXS9J_orarend>
