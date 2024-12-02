@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- RaktarAlkalmazas gyökérelem -->
+    <xs:element name="RaktarAlkalmazas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Felhasznalok" type="FelhasznalokType"/>
+                <xs:element name="Raktarak" type="RaktarakType"/>
+                <xs:element name="Esemenyek" type="EsemenyekType"/>
+                <xs:element name="Berlesek" type="BerlesekType"/>
+                <xs:element name="Kedvezmenyek" type="KedvezmenyekType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Felhasznalok -->
+    <xs:complexType name="FelhasznalokType">
+        <xs:sequence>
+            <xs:element name="Felhasznalo" type="FelhasznaloType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="FelhasznaloType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:int"/>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="neme" type="NemeType"/>
+            <xs:element name="jelszo" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Neme enum -->
+    <xs:simpleType name="NemeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Férfi"/>
+            <xs:enumeration value="Nő"/>
+            <xs:enumeration value="Egyéb"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Raktarak -->
+    <xs:complexType name="RaktarakType">
+        <xs:sequence>
+            <xs:element name="Raktar" type="RaktarType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="RaktarType">
+        <xs:sequence>
+            <xs:element name="raktar_id" type="xs:int"/>
+            <xs:element name="ar_berles" type="xs:decimal"/>
+            <xs:element name="ar_vetel" type="xs:decimal"/>
+            <xs:element name="cim" type="xs:string"/>
+            <xs:element name="tulajdonos_id" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Esemenyek -->
+    <xs:complexType name="EsemenyekType">
+        <xs:sequence>
+            <xs:element name="Esemeny" type="EsemenyType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EsemenyType">
+        <xs:sequence>
+            <xs:element name="esemeny_id" type="xs:int"/>
+            <xs:element name="esemeny_nev" type="EsemenyNevType"/>
+            <xs:element name="datum" type="xs:date"/>
+            <xs:element name="helyszin" type="xs:string"/>
+            <xs:element name="leiras" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Esemeny_nev enum -->
+    <xs:simpleType name="EsemenyNevType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Licit"/>
+            <xs:enumeration value="Kiárusítás"/>
+            <xs:enumeration value="Bolhapiac"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Berlesek -->
+    <xs:complexType name="BerlesekType">
+        <xs:sequence>
+            <xs:element name="Berles" type="BerlesType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="BerlesType">
+        <xs:sequence>
+            <xs:element name="tranzakcio_id" type="xs:int"/>
+            <xs:element name="felhasznalo_id" type="xs:int"/>
+            <xs:element name="raktar_id" type="xs:int"/>
+            <xs:element name="tipus" type="TipusType"/>
+            <xs:element name="kezdes_datum" type="xs:date"/>
+            <xs:element name="ar" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Tipus enum -->
+    <xs:simpleType name="TipusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Bérlés"/>
+            <xs:enumeration value="Vétel"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Kedvezmenyek -->
+    <xs:complexType name="KedvezmenyekType">
+        <xs:sequence>
+            <xs:element name="Kedvezmeny" type="KedvezmenyType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="KedvezmenyType">
+        <xs:sequence>
+            <xs:element name="kedvezmeny_id" type="xs:int"/>
+            <xs:element name="felhasznalo_id" type="xs:int"/>
+            <xs:element name="kedvezmeny_szazalek" type="xs:decimal"/>
+            <xs:element name="ervenyesseg_vege" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
