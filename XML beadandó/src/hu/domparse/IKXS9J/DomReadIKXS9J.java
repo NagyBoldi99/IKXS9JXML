@@ -31,16 +31,17 @@ public class DomReadIKXS9J {
                 }
             }
 
-            // Raktárak feldolgozása
+         // Raktárak feldolgozása
             System.out.println("\n--- Raktárak ---");
             NodeList raktarak = document.getElementsByTagName("Raktar");
             for (int i = 0; i < raktarak.getLength(); i++) {
                 Node node = raktarak.item(i);
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
                     Element raktar = (Element) node;
-                    System.out.println("Raktár ID: " + raktar.getElementsByTagName("raktar_id").item(0).getTextContent());
-                    System.out.println("Bérlés ára: " + raktar.getElementsByTagName("ar_berles").item(0).getTextContent());
-                    System.out.println("Vétel ára: " + raktar.getElementsByTagName("ar_vetel").item(0).getTextContent());
+                    System.out.println("Raktár ID: " + raktar.getElementsByTagName("raktar_id").item(0).getTextContent());               
+                    Element arakElem = (Element) raktar.getElementsByTagName("arak").item(0);
+                    System.out.println("Bérlés ára: " + arakElem.getElementsByTagName("ar_berles").item(0).getTextContent());
+                    System.out.println("Vétel ára: " + arakElem.getElementsByTagName("ar_vetel").item(0).getTextContent());                    
                     System.out.println("Cím: " + raktar.getElementsByTagName("cim").item(0).getTextContent());
                     System.out.println("Tulajdonos ID: " + raktar.getElementsByTagName("tulajdonos_id").item(0).getTextContent());
                     System.out.println();

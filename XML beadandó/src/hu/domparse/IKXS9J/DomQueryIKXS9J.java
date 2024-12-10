@@ -25,13 +25,14 @@ public class DomQueryIKXS9J {
                 System.out.println("Felhasználó: " + id + ", " + nev + ", " + email + ", " + neme);
             }
 
-            // 2. Raktár lekérdezése (Első raktár)
+         // 2. Raktár lekérdezése (Első raktár)
             NodeList raktarak = document.getElementsByTagName("Raktar");
             if (raktarak.getLength() > 0) {
-                Element raktar = (Element) raktarak.item(0);
+                Element raktar = (Element) raktarak.item(0);              
+                Element arak = (Element) raktar.getElementsByTagName("arak").item(0); // Az arak eleme
+                String arBerles = arak.getElementsByTagName("ar_berles").item(0).getTextContent();
+                String arVetel = arak.getElementsByTagName("ar_vetel").item(0).getTextContent();                
                 String raktarId = raktar.getElementsByTagName("raktar_id").item(0).getTextContent();
-                String arBerles = raktar.getElementsByTagName("ar_berles").item(0).getTextContent();
-                String arVetel = raktar.getElementsByTagName("ar_vetel").item(0).getTextContent();
                 String cim = raktar.getElementsByTagName("cim").item(0).getTextContent();
                 System.out.println("Raktár: " + raktarId + ", Bérlés ár: " + arBerles + ", Vétel ár: " + arVetel + ", Cím: " + cim);
             }

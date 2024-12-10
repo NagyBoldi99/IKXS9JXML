@@ -50,12 +50,18 @@
     <xs:complexType name="RaktarType">
         <xs:sequence>
             <xs:element name="raktar_id" type="xs:int"/>
-            <xs:element name="ar_berles" type="xs:decimal"/>
-            <xs:element name="ar_vetel" type="xs:decimal"/>
+            <xs:element name="arak" type="arakType"/>
             <xs:element name="cim" type="xs:string"/>
             <xs:element name="tulajdonos_id" type="xs:int"/>
         </xs:sequence>
     </xs:complexType>
+
+	<xs:complexType name="arakType">
+    <xs:sequence>
+        <xs:element name="ar_berles" type="xs:decimal"/>
+        <xs:element name="ar_vetel" type="xs:decimal"/>
+    </xs:sequence>
+</xs:complexType>
 
     <!-- Esemenyek -->
     <xs:complexType name="EsemenyekType">

@@ -9,9 +9,9 @@
                         
             <id>1</id>
                         
-            <nev>Kovács István</nev>
+            <nev>Új Név</nev>
                         
-            <email>istvan.kovacs@example.com</email>
+            <email>ujemail@example.com</email>
                         
             <neme>Férfi</neme>
                         
@@ -57,9 +57,13 @@
                         
             <raktar_id>1</raktar_id>
                         
-            <ar_berles>10000</ar_berles>
-                        
-            <ar_vetel>150000</ar_vetel>
+            <arak>
+                	            
+                <ar_berles>5000</ar_berles>
+                	            
+                <ar_vetel>120000</ar_vetel>
+                	        
+            </arak>
                         
             <cim>Budapest, Váci út 10.</cim>
                         
@@ -71,9 +75,13 @@
                         
             <raktar_id>2</raktar_id>
                         
-            <ar_berles>8000</ar_berles>
-                        
-            <ar_vetel>120000</ar_vetel>
+            <arak>
+                	            
+                <ar_berles>8000</ar_berles>
+                	            
+                <ar_vetel>120000</ar_vetel>
+                	        
+            </arak>
                         
             <cim>Debrecen, Fő út 12.</cim>
                         
@@ -85,9 +93,13 @@
                         
             <raktar_id>3</raktar_id>
                         
-            <ar_berles>15000</ar_berles>
-                        
-            <ar_vetel>200000</ar_vetel>
+            <arak>
+                	            
+                <ar_berles>15000</ar_berles>
+                	            
+                <ar_vetel>200000</ar_vetel>
+                            
+            </arak>
                         
             <cim>Pécs, Tavasz utca 5.</cim>
                         
@@ -105,11 +117,11 @@
                         
             <esemeny_id>1</esemeny_id>
                         
-            <esemeny_nev>Licit</esemeny_nev>
+            <esemeny_nev>ÚjEseményNév</esemeny_nev>
                         
             <datum>2024-12-05</datum>
                         
-            <helyszin>Budapest, Váci út 10.</helyszin>
+            <helyszin>Új Helyszín</helyszin>
                         
             <leiras>Raktár árverés.</leiras>
                     

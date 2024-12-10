@@ -33,7 +33,7 @@ public class DomModifyIKXS9J {
                 }
             }
 
-            // 2. Raktár módosítása
+         // 2. Raktár módosítása
             NodeList raktarak = document.getElementsByTagName("Raktar");
             for (int i = 0; i < raktarak.getLength(); i++) {
                 Node node = raktarak.item(i);
@@ -42,8 +42,9 @@ public class DomModifyIKXS9J {
                     // Raktár ID alapján módosítunk
                     String raktarId = raktar.getElementsByTagName("raktar_id").item(0).getTextContent();
                     if (raktarId.equals("1")) { // Itt módosítható a raktár ID-ja
-                        raktar.getElementsByTagName("ar_berles").item(0).setTextContent("5000");
-                        raktar.getElementsByTagName("ar_vetel").item(0).setTextContent("120000");
+                        Element arakElem = (Element) raktar.getElementsByTagName("arak").item(0);
+                        arakElem.getElementsByTagName("ar_berles").item(0).setTextContent("5000");
+                        arakElem.getElementsByTagName("ar_vetel").item(0).setTextContent("120000");
                         System.out.println("Raktár módosítva.");
                     }
                 }
@@ -58,7 +59,7 @@ public class DomModifyIKXS9J {
                     // Esemény ID alapján módosítunk
                     String esemenyId = esemeny.getElementsByTagName("esemeny_id").item(0).getTextContent();
                     if (esemenyId.equals("1")) { // Itt módosítható az esemény ID-ja
-                        esemeny.getElementsByTagName("esemeny_nev").item(0).setTextContent("Új Esemény Név");
+                        esemeny.getElementsByTagName("esemeny_nev").item(0).setTextContent("ÚjEseményNév");
                         esemeny.getElementsByTagName("helyszin").item(0).setTextContent("Új Helyszín");
                         System.out.println("Esemény módosítva.");
                     }
