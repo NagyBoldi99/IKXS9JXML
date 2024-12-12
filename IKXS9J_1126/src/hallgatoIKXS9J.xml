@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hallgatok>
+    <hallgato id="01">
+        <nev>Varga Bence</nev>
+        <neptunkod>CKFEC9</neptunkod>
+        <szak>Informatika</szak>
+    </hallgato>
+    <hallgato id="02">
+        <nev>Fekete Ádám</nev>
+        <neptunkod>FFF123</neptunkod>
+        <szak>Villamosmérnök</szak>
+    </hallgato>
+</hallgatok>
