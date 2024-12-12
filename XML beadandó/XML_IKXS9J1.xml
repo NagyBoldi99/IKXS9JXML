@@ -1,200 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <RaktarAlkalmazas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaIKXS9J.xsd">
-        
-    <!-- Felhasználók táblája -->
-        
     <Felhasznalok>
-                
         <Felhasznalo>
-                        
             <id>1</id>
-                        
-            <nev>Új Név</nev>
-                        
-            <email>ujemail@example.com</email>
-                        
+            <nev>Kovács István</nev>
+            <email>istvan.kovacs@example.com</email>
             <neme>Férfi</neme>
-                        
             <jelszo>jelszo123</jelszo>
-                    
         </Felhasznalo>
-                
         <Felhasznalo>
-                        
             <id>2</id>
-                        
             <nev>Nagy Erika</nev>
-                        
             <email>erika.nagy@example.com</email>
-                        
             <neme>Nő</neme>
-                        
             <jelszo>biztonsagosJelszo</jelszo>
-                    
         </Felhasznalo>
-                
         <Felhasznalo>
-                        
             <id>3</id>
-                        
             <nev>Szabó Péter</nev>
-                        
             <email>peter.szabo@example.com</email>
-                        
             <neme>Férfi</neme>
-                        
             <jelszo>12345</jelszo>
-                    
         </Felhasznalo>
-            
     </Felhasznalok>
-        
-    <!-- Raktárak táblája -->
-        
     <Raktarak>
-                
         <Raktar>
-                        
             <raktar_id>1</raktar_id>
-                        
             <arak>
-                	            
-                <ar_berles>5000</ar_berles>
-                	            
-                <ar_vetel>120000</ar_vetel>
-                	        
+                <ar_berles>10000</ar_berles>
+                <ar_vetel>150000</ar_vetel>
             </arak>
-                        
             <cim>Budapest, Váci út 10.</cim>
-                        
             <tulajdonos_id>1</tulajdonos_id>
-                    
         </Raktar>
-                
         <Raktar>
-                        
             <raktar_id>2</raktar_id>
-                        
             <arak>
-                	            
                 <ar_berles>8000</ar_berles>
-                	            
                 <ar_vetel>120000</ar_vetel>
-                	        
             </arak>
-                        
             <cim>Debrecen, Fő út 12.</cim>
-                        
             <tulajdonos_id>2</tulajdonos_id>
-                    
         </Raktar>
-                
         <Raktar>
-                        
             <raktar_id>3</raktar_id>
-                        
             <arak>
-                	            
                 <ar_berles>15000</ar_berles>
-                	            
                 <ar_vetel>200000</ar_vetel>
-                            
             </arak>
-                        
             <cim>Pécs, Tavasz utca 5.</cim>
-                        
             <tulajdonos_id>3</tulajdonos_id>
-                    
         </Raktar>
-            
     </Raktarak>
-        
-    <!-- Események táblája -->
-        
     <Esemenyek>
-                
         <Esemeny>
-                        
             <esemeny_id>1</esemeny_id>
-                        
-            <esemeny_nev>ÚjEseményNév</esemeny_nev>
-                        
+            <esemeny_nev>Licit</esemeny_nev>
             <datum>2024-12-05</datum>
-                        
-            <helyszin>Új Helyszín</helyszin>
-                        
+            <helyszin>Budapest, Váci út 10.</helyszin>
             <leiras>Raktár árverés.</leiras>
-                    
         </Esemeny>
-                
         <Esemeny>
-                        
             <esemeny_id>2</esemeny_id>
-                        
             <esemeny_nev>Kiárusítás</esemeny_nev>
-                        
             <datum>2024-12-10</datum>
-                        
             <helyszin>Debrecen, Fő út 12.</helyszin>
-                        
             <leiras>Kedvezményes áron elérhető termékek.</leiras>
-                    
         </Esemeny>
-                
         <Esemeny>
-                        
             <esemeny_id>3</esemeny_id>
-                        
             <esemeny_nev>Bolhapiac</esemeny_nev>
-                        
             <datum>2024-12-15</datum>
-                        
             <helyszin>Pécs, Tavasz utca 5.</helyszin>
-                        
             <leiras>Használt tárgyak árusítása.</leiras>
-                    
         </Esemeny>
-            
     </Esemenyek>
-        
-    <!-- Bérlések táblája -->
-        
     <Berlesek>
-                
         <Berles>
-                        
             <tranzakcio_id>1</tranzakcio_id>
-                        
             <felhasznalo_id>2</felhasznalo_id>
-                        
             <raktar_id>1</raktar_id>
-                        
             <tipus>Bérlés</tipus>
-                        
             <kezdes_datum>2024-12-01</kezdes_datum>
-                        
             <ar>10000</ar>
-                    
         </Berles>
-            
     </Berlesek>
-        
-    <!-- Kedvezmények táblája -->
-        
     <Kedvezmenyek>
-                
         <Kedvezmeny>
-                        
             <kedvezmeny_id>1</kedvezmeny_id>
-                        
             <felhasznalo_id>3</felhasznalo_id>
-                        
             <kedvezmeny_szazalek>15</kedvezmeny_szazalek>
-                        
             <ervenyesseg_vege>2024-12-31</ervenyesseg_vege>
-                    
         </Kedvezmeny>
-            
     </Kedvezmenyek>
-    
 </RaktarAlkalmazas>
